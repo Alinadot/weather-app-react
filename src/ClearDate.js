@@ -7,7 +7,6 @@ export default function clearDate(props) {
     let hours = props.date.getHours();
     if (hours <10) {
          hours=`${hours}`;}
-         
     let minutes = props.date.getMinutes();
     if (minutes <10){
         minutes=`0${minutes}`;
