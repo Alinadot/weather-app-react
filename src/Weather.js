@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import ClearDate from "./ClearDate";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -12,7 +13,7 @@ setWeatherData ({
 ready: true,
 temperature:response.data.main.temp,
 humidity:response.data.main.humidity,
-date:"Sunday 22:15",
+date:new Date(response.data.dt * 1000),
 wind: response.data.wind.speed,
 description:response.data.weather[0].description,
 iconUrl:"https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
@@ -35,7 +36,8 @@ return (
     </form>
     <h1>{weatherData.city}</h1>
     <ul>
-        <li>{weatherData.date}</li>
+        <li>
+            <ClearDate date= {weatherData.date} /> </li>
         <li className="text-capitalize">{weatherData.description}</li>
     </ul>
      <div className="row mt-3">
