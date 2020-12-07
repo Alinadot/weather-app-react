@@ -1,6 +1,6 @@
 import React from "react";
 import Weather from "./Weather"; 
-import './App.css';
+import "./App.css";
 
 export default function App() {
   return (
@@ -9,9 +9,8 @@ export default function App() {
    
    <Weather defaultCity="Amsterdam"/>
     <footer>
-      This project is coded by Alina Shamko and is{" "}
+      Coded by Alina Shamko and is{" "}
   <a href="https://github.com/Alinadot/weather-app-react" target="_blank" rel="noreferrer"> open-sourced on GitHub</a>
-    
     </footer>
     </div>
     </div>

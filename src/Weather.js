@@ -1,16 +1,17 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
    
-    const [weatherData, setWeatherData]=useState({ ready:false });
+    const [weatherData, setWeatherData]= useState({ ready:false });
+
     function handleResponse(response) {
 setWeatherData ({
 ready: true,
 temperature:response.data.main.temp,
-hunidity:response.data.main.humidity,
-date:"Sunday 22.15",
+humidity:response.data.main.humidity,
+date:"Sunday 22:15",
 wind: response.data.wind.speed,
 description:response.data.weather[0].description,
 iconUrl:"https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
@@ -31,7 +32,6 @@ return (
    </div>
     </div>
     </form>
-
     <h1>{weatherData.city}</h1>
     <ul>
         <li>{weatherData.date}</li>
@@ -51,7 +51,7 @@ return (
       <ul>
 
 <li>
-    Humidity:{weatherData.humidity}%
+    Humidity: {weatherData.humidity} %
 </li>
 <li>
     Wind: {weatherData.wind}km/h</li>
