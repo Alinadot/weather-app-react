@@ -53,6 +53,7 @@ return (
     </form>
     <MainWeather data={weatherData} />
     </div>
+    
 );
 } 
 else {
