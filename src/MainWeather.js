@@ -24,7 +24,6 @@ return (
 </div> 
      <div className="col-6">
       <ul>
-
 <li>
     Humidity: {props.data.humidity} %
 </li>

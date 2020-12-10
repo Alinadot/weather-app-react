@@ -1,0 +1,10 @@
+.DetailedForecast {
+  margin: 10px;
+  display: inline;
+  position: relative;
+  right: -100px;
+}
+
+.DetailedForecast canvas {
+  height: 40px;
+}
