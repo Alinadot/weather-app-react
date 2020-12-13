@@ -18,7 +18,7 @@ return (
     <div className="PreviewForecast">
      {hours()} {" "} 
      <IconWeather code={props.data.weather[0].icon} />
-    {" "} {" "} {temperature()}
+    {" "} {temperature()}
     </div>
 );
 }

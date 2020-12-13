@@ -32,7 +32,7 @@ return (
 </li>
 
 <li>
-    Wind: {props.data.wind}km/h </li>
+    Wind: {props.data.wind} km/h </li>
       </ul>    
       </div> 
       </div>

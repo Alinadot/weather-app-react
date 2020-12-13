@@ -52,14 +52,14 @@ return (
    </div>
     </div>
     </form>
+
    <MainWeather data={weatherData} />
     <DeatailedForecast city={weatherData.city}/>
-    </div>
-    
+    </div>    
 );
 } 
 else {
 search();
-return "Loading"
+return "Loading";
 }
 }
