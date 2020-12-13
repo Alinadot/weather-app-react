@@ -2,13 +2,15 @@ import React from "react";
 import ClearDate from "./ClearDate";
 import IconWeather from "./IconWeather";
 import WeatherTemperature from "./WeatherTemperature";
+import "./MainWeather.css";
 
 export default function MainWeather (props){
 return (
 <div className="mainWeather"><h1>{props.data.city}</h1>
     <ul>
         <li>
-        <ClearDate date= {props.data.date} /> </li>
+            <ClearDate date= {props.data.date} /> </li>
+        <hr /> 
         <li className="text-capitalize">{props.data.description}</li>
     </ul>
      <div className="row mt-3">
@@ -22,15 +24,18 @@ return (
          </div>
        </div>
 </div> 
+<div className="Details">
      <div className="col-6">
       <ul>
 <li>
-    Humidity: {props.data.humidity} %
+  Humidity: {props.data.humidity} %
 </li>
+
 <li>
     Wind: {props.data.wind}km/h</li>
       </ul>    
       </div> 
+      </div>
     </div>
     </div>
 );

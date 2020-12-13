@@ -16,7 +16,7 @@ return `${temperature}°C `;
 return (
     <div className="PreviewForecast">
      {hours()}   
-    <IconWeather code={props.data.weather[0].icon} />
+     <IconWeather code={props.data.weather[0].icon} />
     {temperature()}
     </div>
 );

@@ -45,14 +45,14 @@ return (
 <form onSubmit={handleSubmit}>
 <div className="row">
 <div className="col-9">  
-<input type="search" placeholder="Type a city..." className="form-control"autoFocus="on" onChange={handleCityChange} />
+<input type="search" placeholder="Type a city..." className="form-control"autoFocus="on" onChange={handleCityChange} style={{width:"300px"}} />
 </div> 
 <div className="col-3">
 <input type="submit" value="Search" className="btn btn-warning" />
    </div>
     </div>
     </form>
-    <MainWeather data={weatherData} />
+   <MainWeather data={weatherData} />
     <DeatailedForecast city={weatherData.city}/>
     </div>
     

@@ -1,10 +1,13 @@
-.DetailedForecast {
-  margin: 10px;
-  display: inline;
+.Detailed {
   position: relative;
-  right: -100px;
+  left: 90px;
+  bottom: 100px;
+  text-align: center;
 }
 
-.DetailedForecast canvas {
+.Detailed canvas {
+  position: relative;
+  bottom: -70px;
+  left: 30px;
   height: 40px;
 }

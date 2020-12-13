@@ -1,6 +1,8 @@
 .App {
   max-width: 600px;
   margin: 30px auto;
+  font-family: "Open Sans", sans-serif;
+  color: #625772;
 }
 .App footer {
   font-size: 11px;
