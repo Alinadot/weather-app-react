@@ -60,6 +60,6 @@ return (
 } 
 else {
 search();
-return "Loading...";
+return "Loading"
 }
 }

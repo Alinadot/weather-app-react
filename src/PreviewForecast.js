@@ -1,5 +1,6 @@
 import React from "react";
 import IconWeather from "./IconWeather";
+import "./PreviewForecast.css";
 
 export default function PreviewForecast(props) {
 function hours() {
@@ -15,9 +16,9 @@ return `${temperature}°C `;
 
 return (
     <div className="PreviewForecast">
-     {hours()}   
+     {hours()} {" "} 
      <IconWeather code={props.data.weather[0].icon} />
-    {temperature()}
+    {" "} {" "} {temperature()}
     </div>
 );
 }

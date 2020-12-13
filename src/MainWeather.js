@@ -25,14 +25,14 @@ return (
        </div>
 </div> 
 <div className="Details">
-     <div className="col-6">
+     <div className="col-15">
       <ul>
 <li>
-  Humidity: {props.data.humidity} %
+ Humidity: {props.data.humidity} % 
 </li>
 
 <li>
-    Wind: {props.data.wind}km/h</li>
+    Wind: {props.data.wind}km/h </li>
       </ul>    
       </div> 
       </div>
