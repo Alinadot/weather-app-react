@@ -58,9 +58,4 @@ return (
     <DeatailedForecast city={weatherData.city}/>
     </div>    
 );
-} 
-else {
-search();
-return App;
-}
-}
+} }
