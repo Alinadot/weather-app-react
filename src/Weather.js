@@ -60,6 +60,5 @@ return (
 } 
 else {
 search();
-return "Loading";
 }
 }
