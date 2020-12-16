@@ -6,5 +6,6 @@
 .App footer {
   font-size: 11px;
   position: relative;
-  right: -30px;
+  right: -315px;
+  bottom: -3px;
 }
