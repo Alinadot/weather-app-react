@@ -1,6 +1,6 @@
 .Detailed {
   position: relative;
-  top: -230px;
+  top: -225px;
   left: -7px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 6px;
@@ -19,7 +19,7 @@
 .Detailed canvas {
   position: relative;
   top: 15px;
-  left: 0px;
+  left: -5px;
   height: 40px;
   margin: auto;
   padding: 0;
