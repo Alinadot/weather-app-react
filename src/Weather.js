@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import MainWeather from "./MainWeather";
 import DeatailedForecast from "./DetailedForecast";
+ import Loader from 'react-loader-spinner'
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -60,6 +61,14 @@ return (
 } 
 else {
 search();
-return 'Whatever';
+return (  
+<Loader className="loader"
+         type="Oval"
+         color="#e7b51d"
+         height={100}
+         width={100}
+         timeout={3000}
+/>
+);
 }
 }
