@@ -19,8 +19,7 @@
 .Detailed canvas {
   position: relative;
   top: 15px;
-  left: -5px;
+  left: 0px;
   height: 40px;
   margin: auto;
-  padding: 0;
 }
